@@ -1,15 +1,13 @@
-const swiper = new Swiper(".swiper", {
-    effect: "cards",
-    grabCursor: true,
+new Swiper(".swiper", {
+    effect: "fade",
+    speed: 1200,
 
-    loop: false,
-
-    speed: 700,
+    fadeEffect: {
+        crossFade: true,
+    },
 
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-
-    allowTouchMove: true,
 });
